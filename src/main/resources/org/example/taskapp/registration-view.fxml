@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.taskapp.controllers.RegistrationController">
+    <children>
+        <TextField fx:id="loginRegistration" layoutX="139.0" layoutY="149.0" prefHeight="26.0" prefWidth="453.0" promptText="Логин" />
+        <TextField fx:id="mailRegistration" layoutX="139.0" layoutY="217.0" prefHeight="26.0" prefWidth="454.0" promptText="Электронная почта" />
+        <PasswordField fx:id="passwordRegistration" layoutX="137.0" layoutY="287.0" prefHeight="26.0" prefWidth="454.0" promptText="Пароль" />
+        <Label layoutX="229.0" layoutY="52.0" text="Регистрация" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Button layoutX="194.0" layoutY="371.0" mnemonicParsing="false" onAction="#onRegistrationClick" prefHeight="36.0" prefWidth="136.0" text="Зарегистрироваться" />
+      <Button layoutX="375.0" layoutY="371.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="36.0" prefWidth="127.0" text="Назад" />
+      <Label fx:id="errMailMessage" layoutX="139.0" layoutY="255.0" prefHeight="18.0" prefWidth="454.0" text="Label" textFill="WHITE" />
+    </children>
+</AnchorPane>

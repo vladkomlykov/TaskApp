@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.taskapp.controllers.AppController">
+    <children>
+        <Label layoutX="219.0" layoutY="10.0" prefHeight="43.0" prefWidth="391.0" text="Task Manager" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+      <Label fx:id="loginUser" layoutX="600.0" layoutY="26.0" onMouseClicked="#goToSettings" prefHeight="31.0" prefWidth="121.0" text="Label" textFill="WHITE" />
+      <ListView fx:id="tasksList" layoutX="47.0" layoutY="124.0" prefHeight="277.0" prefWidth="656.0" />
+      <Button layoutX="570.0" layoutY="77.0" mnemonicParsing="false" onAction="#editTask" text="Редактировать задачу" />
+      <Button layoutX="450.0" layoutY="77.0" mnemonicParsing="false" onAction="#delTask" text="Удалить задачу" />
+      <Button layoutX="305.0" layoutY="77.0" mnemonicParsing="false" onAction="#addTask" prefHeight="26.0" prefWidth="122.0" text="Добавить задачу" />
+      <TextField fx:id="taskId" layoutX="55.0" layoutY="77.0" promptText="id задачи" />
+      <ChoiceBox fx:id="choiceStatus" layoutX="14.0" layoutY="419.0" prefHeight="39.0" prefWidth="94.0" />
+      <Button layoutX="130.0" layoutY="423.0" mnemonicParsing="false" onAction="#onSearchBtnClick" prefHeight="31.0" prefWidth="100.0" text="Поиск" />
+      <Button layoutX="551.0" layoutY="419.0" mnemonicParsing="false" onAction="#buildReport" prefHeight="31.0" prefWidth="138.0" text="Сфррмировать отчёт" />
+      <DatePicker fx:id="startDate" layoutX="355.0" layoutY="410.0" prefHeight="3.0" prefWidth="175.0" promptText="Начало" />
+      <DatePicker fx:id="endDate" layoutX="356.0" layoutY="446.0" promptText="Конец" />
+    </children>
+</AnchorPane>

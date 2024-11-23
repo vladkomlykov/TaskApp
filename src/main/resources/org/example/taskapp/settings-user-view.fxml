@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.taskapp.controllers.SettingsUserController">
+    <children>
+        <Label layoutX="248.0" layoutY="24.0" text="Настройки" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+      <TextField fx:id="newLogin" layoutX="65.0" layoutY="174.0" prefHeight="28.0" prefWidth="596.0" promptText="Новый логин" />
+      <TextField layoutX="65.0" fx:id="newMail" layoutY="236.0" prefHeight="28.0" prefWidth="596.0" promptText="Новая почта" />
+      <TextField layoutX="65.0" layoutY="296.0" fx:id="newPassword" prefHeight="28.0" prefWidth="596.0" promptText="Новый пароль" />
+      <Button layoutX="150.0" layoutY="358.0" mnemonicParsing="false" prefHeight="47.0" onAction="#onSaveBtnClick" prefWidth="147.0" text="Сохранить" />
+      <Button layoutX="428.0" layoutY="358.0" mnemonicParsing="false" visible="false" fx:id="backBtn" onAction="#onBackBtnClick" prefHeight="47.0" prefWidth="147.0" text="Назад" />
+      <Label layoutX="65.0" layoutY="94.0" prefHeight="28.0" prefWidth="300.0" text="Заполните только те поля, которые хотите изменить" textFill="WHITE" />
+      <Label layoutX="65.0" layoutY="145.0" visible="false" prefHeight="4.0" prefWidth="285.0" text="Label" fx:id="errMessage"/>
+
+    </children>
+
+</AnchorPane>

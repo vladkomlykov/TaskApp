@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.taskapp.controllers.MailController">
+    <children>
+        <TextField fx:id="codeMail" layoutX="137.0" layoutY="287.0" prefHeight="26.0" prefWidth="454.0" visible="false" />
+        <Label layoutX="229.0" layoutY="52.0" text="Mail" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Button layoutX="375.0" layoutY="371.0" mnemonicParsing="false" onAction="#onChangePasswordClick" prefHeight="36.0" prefWidth="127.0" text="Сменить пароль" />
+      <Button layoutX="193.0" layoutY="376.0" mnemonicParsing="false" onAction="#OnGetCodeClick" prefHeight="36.0" prefWidth="127.0" text="Получить код" />
+    </children>
+</AnchorPane>

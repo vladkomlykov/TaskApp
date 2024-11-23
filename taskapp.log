@@ -1,0 +1,4 @@
+нояб. 23, 2024 1:12:18 PM org.example.taskapp.controllers.AppController showLoginUser
+INFO: Пользователь найден: vladik
+нояб. 23, 2024 1:12:26 PM org.example.taskapp.controllers.AppController delTask
+INFO: Задача успешно удалена

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.taskapp.controllers.LoginController">
+    <children>
+        <TextField fx:id="loginLogin" layoutX="51.0" layoutY="129.0" prefHeight="26.0" prefWidth="629.0" promptText="Логин" visible="true" />
+        <PasswordField fx:id="passwordLogin" layoutX="50.0" layoutY="184.0" prefHeight="26.0" prefWidth="630.0" promptText="Пароль" visible="true" />
+        <Label layoutX="313.0" layoutY="14.0" text="Вход" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Button fx:id="loginBtn" layoutX="178.0" layoutY="329.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="36.0" prefWidth="136.0" text="Войти" visible="true" />
+        <Button fx:id="backBtn" layoutX="410.0" layoutY="329.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="36.0" prefWidth="136.0" text="Назад" visible="true" />
+      <Label fx:id="resetPasswordLabelLogin" layoutX="51.0" layoutY="302.0" onMouseClicked="#onLabelClicked" prefHeight="19.0" prefWidth="136.0" text="Забыли пароль?" textFill="#281fd9" />
+      <Label fx:id="wrongPasswordMessage" layoutX="52.0" layoutY="268.0" prefHeight="19.0" prefWidth="351.0" text="Label" visible="false" />
+      <TextField fx:id="mailLogin" layoutX="52.0" layoutY="244.0" prefHeight="26.0" prefWidth="630.0" promptText="Введите почту" visible="true" />
+      <Button fx:id="codeBtn" layoutX="304.0" layoutY="381.0" mnemonicParsing="false" onAction="#OnGetCodeClick" prefHeight="36.0" prefWidth="124.0" text="Отправить код" visible="false" />
+    </children>
+</AnchorPane>

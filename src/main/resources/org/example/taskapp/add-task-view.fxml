@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="487.0" prefWidth="732.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.taskapp.controllers.AddTaskController">
+    <children>
+        <Label layoutX="148.0" layoutY="14.0" text="Добавление задачи" textFill="WHITE">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <TextField fx:id="titleTask" layoutX="52.0" layoutY="94.0" prefHeight="38.0" prefWidth="627.0" promptText="Название задачи" />
+        <TextField fx:id="decriptionTask" layoutX="52.0" layoutY="160.0" prefHeight="38.0" prefWidth="627.0" promptText="Описание задачи" />
+        <ChoiceBox fx:id="priorityTask" layoutX="52.0" layoutY="231.0" prefHeight="38.0" prefWidth="627.0" />
+        <Label layoutX="52.0" layoutY="206.0" prefHeight="21.0" prefWidth="163.0" text="Выбор приоритета" textFill="WHITE" />
+        <ChoiceBox fx:id="statusTask" layoutX="52.0" layoutY="294.0" prefHeight="38.0" prefWidth="627.0" />
+        <Label layoutX="52.0" layoutY="277.0" prefHeight="11.0" prefWidth="163.0" text="Выбор статуса задачи" textFill="WHITE" />
+        <Button layoutX="98.0" layoutY="386.0" mnemonicParsing="false" onAction="#onSaveBtnClick" prefHeight="45.0" prefWidth="163.0" text="Сохранить" />
+        <Label fx:id="errMessage" layoutX="180.0" layoutY="366.0" prefHeight="11.0" prefWidth="163.0" visible="false" />
+        <Button fx:id="backBtn" onAction="#onBackBtnClick" layoutX="405.0" layoutY="385.0" mnemonicParsing="false" visible="false" prefHeight="46.0" prefWidth="163.0" text="Назад" />
+    </children>
+</AnchorPane>
